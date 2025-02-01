@@ -3,7 +3,7 @@ import './BtlCart.css'
 const BtlCart = ({cart, handleRemoveCart}) => {
     return (
         <div>
-            <h3>Cart : {cart.length}</h3>
+            <h3>Cart Length: {cart.length}</h3>
             <div className="cart-container">
                 {cart.map(bottle => <div  key={bottle.id} >
                     <img src={bottle.img}></img>
